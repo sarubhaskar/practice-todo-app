@@ -11,4 +11,7 @@ User.create(name: "Justin", email: "justin@example.com", password_digest: "passw
 User.create(name: "Valerie", email: "valerie@example.com", password_digest: "password")
 User.create(name: "Rexly", email: "rexly@example.com", password_digest: "password")
 
+Todo.create(user_id: "1", category_id: "To Do At Home", title: "Clean house", description: "Mop the floors", deadline: "Wednesday", completed: "No")
+Todo.create(user_id: "2", category_id: "To Do At School", title: "Deliberate Practice", description: "Practice loops everyday", deadline: "Sunday", completed: "No")
+
 #   end
