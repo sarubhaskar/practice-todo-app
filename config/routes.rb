@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   post "/users" => "users#create"
   post "/sessions" => "sessions#create"
   get "/todos" => "todos#index"
+  post "/todos" => "todos#create"
 end
