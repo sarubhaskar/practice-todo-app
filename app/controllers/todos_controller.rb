@@ -15,4 +15,22 @@ class TodosController < ApplicationController
     )
     render :show
   end
+
+  def show
+    @todo = Todo.find_by(id: params[:id])
+    render :show
+  end
+
+  def update
+    @todo = Todo.find_by(id: params[:id])
+    @todo.update(
+      user_id: params[:user_id] || @todo.user_id,
+      category_id: params[:category_id] || @todo.category_id,
+      title: params[:title] || @todo.title,
+      description: params[:description] || @todo.description,
+      deadline: params[:deadline] || @todo.deadline,
+      completed: params[:completed] || @todo.completed,
+    )
+    render :show
+  end
 end
