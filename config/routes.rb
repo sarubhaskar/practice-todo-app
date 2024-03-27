@@ -12,4 +12,5 @@ Rails.application.routes.draw do
   get "/todos" => "todos#index"
   post "/todos" => "todos#create"
   post "/categories" => "categories#create"
+  get "/categories/:id" => "categories#show"
 end
