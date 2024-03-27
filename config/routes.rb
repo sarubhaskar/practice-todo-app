@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   post "/todos" => "todos#create"
   get "/todos/:id" => "todos#show"
   patch "/todos/:id" => "todos#update"
+  delete "/todos/:id" => "todos#destroy"
   post "/categories" => "categories#create"
   get "/categories/:id" => "categories#show"
 end
