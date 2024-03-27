@@ -14,4 +14,6 @@ Rails.application.routes.draw do
   get "/todos/:id" => "todos#show"
   patch "/todos/:id" => "todos#update"
   delete "/todos/:id" => "todos#destroy"
+  get "/categories" => "categories#create"
+  get "/categories/:id" => "categories#show"
 end
