@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   post "/sessions" => "sessions#create"
   get "/todos" => "todos#index"
   post "/todos" => "todos#create"
-  post "/categories" => "categories#create"
+  get "/todos/:id" => "todos#show"
+  patch "/todos/:id" => "todos#update"
+  get "/categories" => "categories#create"
   get "/categories/:id" => "categories#show"
 end
